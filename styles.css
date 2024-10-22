@@ -1,0 +1,99 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Estilos para el header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #007BFF; /* Color de fondo del banner */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 2px -2px gray; /* Sombra sutil para el banner */
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+}
+
+.juegos-retos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.cuadro {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+    margin: 0 20px;
+}
+
+.contenido-central h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el hr dividido */
+.hr-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: -10px 0; /* Reducido el margen superior para acercarlo al contenido */
+}
+
+.left, .right {
+    width: 40%;
+    border: none;
+    border-top: 2px solid #808080; /* Color gris */
+}
+
+/* Contenedor de la imagen debajo del HR */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%; /* Ajusta la imagen al ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
